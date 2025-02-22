@@ -1,0 +1,22 @@
+{
+  "name": "estimation-poker",
+  "version": "1.0.0",
+  "description": "Estimation Poker Application",
+  "main": "index.js",
+  "repository": "https://github.com/nixonsu/estimation-poker",
+  "author": "nixonsu",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "server": "yarn workspace server dev",
+    "client": "yarn workspace client dev",
+    "dev": "concurrently \"yarn workspace server dev\" \"yarn workspace client dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
